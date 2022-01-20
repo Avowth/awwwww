@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Customization -->
+    <meta name="description" content="Award is a high quality, simple giveaway bot for managing giveaways on your server!">
+    <meta property="og:title" content="Award Bot">
+    <meta name="theme-color" content="#454ade">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/930125748373704724/931999775451136030/Award.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="author" content="Avowth, Tunar, Fire Power">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/931991946333937685/933785572722475028/Award_Png.png" type="image/x-icon">
+    <title>Award Bot</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css"
+      rel="stylesheet"
+    />
+    
+    
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-color flex"
+      id="mainNav"
+    >
+      <a class="navbar-brand navlogo" href="/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          viewbox="0 0 115.74 115.68"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <g id="katman_2" data-name="katman 2">
+            <g id="katman_1-2" data-name="katman 1">
+              <path
+                class="cls-1"
+                d="M22.91,28.87a22.39,22.39,0,0,1-.29-13.38,21.65,21.65,0,0,1,33.89-11,1.75,1.75,0,0,0,2.66,0,21.62,21.62,0,0,1,34,22.83l-.43,1.6a21.21,21.21,0,0,1,11.16,2.42c7.55,4.16,11.59,10.63,11.69,19.22.16,14.44.13,28.89,0,43.34a21.56,21.56,0,0,1-21.74,21.71q-36.06.14-72.12,0C9.46,115.57.07,106,0,93.57Q0,72.42,0,51.25c0-12.73,9.08-22,21.79-22.33C22.14,28.92,22.47,28.89,22.91,28.87ZM65,72.18c0-7.28.06-14.55,0-21.82a7.16,7.16,0,0,0-14.32-.12c-.06,14.66,0,29.33,0,44a6.55,6.55,0,0,0,1.65,4.32,7.14,7.14,0,0,0,7.79,2.24A7,7,0,0,0,65,94.17C65.07,86.84,65,79.51,65,72.18ZM50.71,24.63a36.33,36.33,0,0,0-.22-4,7.13,7.13,0,0,0-7.64-6.13,7.28,7.28,0,0,0-6.67,6.71,7.15,7.15,0,0,0,6.19,7.61,28.57,28.57,0,0,0,4,.14C50.65,28.94,50.65,28.93,50.71,24.63ZM65,24.26c0,1.39,0,2.57,0,3.76,0,.63.2.94.87.91,2.53-.09,5.08.24,7.59-.18a7.13,7.13,0,0,0,6-7.58,7.28,7.28,0,0,0-6.67-6.71,7.2,7.2,0,0,0-7.64,6A27.17,27.17,0,0,0,65,24.26Z"
+              />
+            </g>
+          </g></svg
+      ></a>
+
+      <a
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="fasse"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text" style="font-size: 20px"></i>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <a class="nav-link text-muted" href="/"
+          ><i class="fas fa-plus"></i> Invite me</a
+        >
+
+        <a class="nav-link text-muted" href="/"
+          ><i class="fas fa-users"></i> Team</a
+        >
+
+        <a class="nav-link text-muted" href="/"
+          ><i class="fas fa-handshake"></i> Partners</a
+        >
+
+        <a class="nav-link text-muted" href="/"
+          ><i class="fab fa-discord"></i> Join Discord</a
+        >
+
+        <a class="nav-link text-warning" href="/" target="_blank"
+          ><i class="fad fa-diamond"></i> Premium</a
+        >
+
+        <ul class="navbar-nav mx-auto"></ul>
+
+        <a
+          type="button"
+          class="btn-lf"
+          href="/giris"
+          style="text-decoration: none"
+          ><i class="fas fa-sign-in-alt"></i> Login</a
+        >
+      </div>
+    </nav>
+
+    <!-- main -->
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>A giveaway bot for discord users</h1>
+            <h5 class="text-muted">
+              Award is a high quality, simple giveaway bot for managing
+              giveaways on your server!
+            </h5>
+
+            <div style="padding-top: 25px">
+              <a class="btn btn-outline-primary" style="margin-right: 20px"
+                >Try Dashboard</a
+              >
+              <a class="btn-lfs"><i class="fab fa-discord"></i> Join Discord</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters">
+              <div class="col-md-6 mx-5">
+                <img
+                  src="https://cdn.discordapp.com/attachments/930125748373704724/932665054556483604/deneme_1.png"
+                  width="280px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- features -->
+    <div class="container text-center pb-5">
+      <h2 class="display-3" style="padding-bottom: 80px">Features</h2>
+      <div class="row pb-5 d-flex flex-md-row flex-column-reverse">
+        <div class="feature-text col-12 col-md-6 mt-4 mt-md-0">
+          <h3>Dashboard</h3>
+          <p class="text-muted h4">
+            You can control and customize the giveaways and all systems in the
+            bot from the dashboard. All the features in the bot are updated
+            simultaneously with the site and every move is instantly visible.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 align-items-center">
+          <img
+            src="https://cdn.discordapp.com/attachments/930125748373704724/933094835068469268/Varlk_1300x.png"
+            width="256px"
+          />
+        </div>
+      </div>
+      <div class="row pb-5 d-flex flex-md-row">
+        <div class="col-12 col-md-6 align-items-center">
+          <img src="https://modmail.xyz/_nuxt/img/feature-2.5d07ffc.png" />
+        </div>
+        <div class="feature-text col-12 col-md-6 mt-4 mt-md-0">
+          <h3>Comfortable</h3>
+          <p class="text-muted h4">
+            Since all systems are written and explained one by one, you can
+            easily remember and perceive all the operations you have done. And
+            you will not have any difficulties while performing these
+            operations.
+          </p>
+        </div>
+      </div>
+      <div class="row pb-5 d-flex flex-md-row flex-column-reverse"></div>
+      <div class="row pb-5 d-flex flex-md-row flex-column-reverse">
+        <div class="feature-text col-12 col-md-6 mt-4 mt-md-0">
+          <h3>Requirements</h3>
+          <p class="text-muted h4">
+            There are requirements you can set when starting giveaways and add
+            by editing users' participation in sweepstakes. For example:
+            Inability to participate without having a specific role, not enough
+            invites
+          </p>
+        </div>
+        <div class="col-12 col-md-6 align-items-center">
+          <img
+            src="https://cdn.discordapp.com/attachments/930125748373704724/933098644566077500/Varlk_1.png"
+            width="150px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- stats -->
+    <section>
+      <div class="container" align="center">
+        <h2>Live statistics</h2>
+        <div class="card bg-dark w-75 mt-4 p-2" align="center">
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+              <lord-icon
+                src="https://cdn.lordicon.com/wrprwmwt.json"
+                trigger="loop"
+                colors="primary:#ffffff,secondary:#454ade"
+                stroke="55"
+                style="width: 100px; height: 100px"
+              >
+              </lord-icon>
+              <div class="d-block mt-3 count-num fw-bold">501</div>
+              <div>Servers</div>
+            </div>
+            <div class="col-md-4 my-3">
+              <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+              <lord-icon
+                src="https://cdn.lordicon.com/dxjqoygy.json"
+                trigger="loop"
+                colors="primary:#ffffff,secondary:#454ade"
+                style="width: 100px; height: 100px"
+              >
+              </lord-icon>
+              <div class="d-block mt-3 count-num fw-bold">1,998,256</div>
+              <div>Total users</div>
+            </div>
+            <div class="col-md-4 my-3">
+              <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+              <lord-icon
+                src="https://cdn.lordicon.com/nkmsrxys.json"
+                trigger="loop"
+                colors="primary:#ffffff,secondary:#454ade"
+                style="width: 100px; height: 100px"
+              >
+              </lord-icon>
+              <div class="d-block mt-3 count-num fw-bold">1,203,568</div>
+              <div>Total Giveaways</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="card bg-dark">
+            <div class="py-5">
+              <h2 class="text-center">Why don't u try me?</h2>
+              <p class="text-center">
+                Everyone deserves a chance, why don't you give us this chance
+              </p>
+              <center>
+                <a href="/invite" target="_blank"
+                  ><button class="btn-lf text-center">Give a chance</button></a
+                >
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <!--footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path
+        fill="#131417"
+        fill-opacity="1"
+        d="M0,192L48,186.7C96,181,192,171,288,181.3C384,192,480,224,576,240C672,256,768,256,864,234.7C960,213,1056,171,1152,160C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <footer class="py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Award Bot</h3>
+            <p>A giveaway bot that can meet all your needs.</p>
+
+            <span class="d-block mt-3 text-muted"
+              >&copy; 2021 All Rights Reserved</span
+            >
+            <br />
+            <div>
+              <a href="/instagram" target="_blank"
+                ><i
+                  class="rounded-lg p-2 bg-footer fab fa-instagram fa-lg mx-2"
+                ></i
+              ></a>
+              <a href="/github" target="_blank"
+                ><i
+                  class="rounded-lg p-2 bg-footer fab fa-github fa-lg mx-2"
+                ></i
+              ></a>
+              <a href="mail@mail.domain" target="_blank"
+                ><i
+                  class="rounded-lg p-2 bg-footer fas fa-envelope fa-lg mx-2"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-2 m-auto">
+            <ul class="list-unstyled">
+              <li class="text-white mb-3">Product</li>
+              <li class="mb-1">
+                <a href="/privacy" class="text-home footer-link">Invite</a>
+              </li>
+              <li class="mb-1">
+                <a href="/tos" class="text-home footer-link">Join Discord</a>
+              </li>
+              <li class="mb-1">
+                <a href="/contact" class="text-home footer-link">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 m-auto">
+            <ul class="list-unstyled">
+              <li class="text-white mb-3">Resources</li>
+              <li class="mb-1">
+                <a href="/privacy" class="text-home footer-link"
+                  >Report a Bug</a
+                >
+              </li>
+              <li class="mb-1">
+                <a href="/tos" class="text-home footer-link">Status Page</a>
+              </li>
+              <li class="mb-1">
+                <a href="/contact" class="text-warning">Premium</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 m-auto">
+            <ul class="list-unstyled">
+              <li class="text-white mb-3">Legal</li>
+              <li class="mb-1">
+                <a href="/privacy" class="text-home footer-link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-1">
+                <a href="/tos" class="text-home footer-link"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="mb-1">
+                <a href="/contact" class="text-home footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
